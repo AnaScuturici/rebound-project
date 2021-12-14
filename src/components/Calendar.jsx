@@ -1,8 +1,10 @@
+import "./Calendar.css";
 
-function Calendar() {
+function Calendar(props) {
+    const { onChange } = props;
+
     return (
       <div className="calendar">
-          This is calendar
       </div>
     );
   }

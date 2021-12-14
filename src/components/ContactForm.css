@@ -1,0 +1,26 @@
+.contact-form {
+    background-color: lightsteelblue;
+    padding: 30px;
+    line-height: 200%;
+}
+
+label {
+    display: inline-flex;
+    clear: left;
+    width: 100px;
+    text-align: right;
+}
+input, textarea {
+  display: inline-flexbox;
+  width: 250px;
+  border-radius: 5px;
+  border: #97969e solid 3px;
+}
+
+button {
+    border: #97969e solid 3px;
+    border-radius: 7px;
+    padding: 10px;
+    margin-left: 100px;
+    display:block;
+}

@@ -1,13 +1,14 @@
 import photo from "./profile-pic.jpeg";
+import "./Profile.css";
 
 function Profile() {
     return (
-      <div className="home-page">
+      <div className="profile-page">
        <header>
-       <img alt="profile-pic" src={photo} height={"100px"} width={"100x"}></img>
+       <img className="profile-pic" alt="profile-pic" src={photo} ></img>
        <h1>Welcome!</h1>
        <p>About me</p>
-       <button>Book a session with me!</button>
+       <button className="book-btn">Book a session with me!</button>
        </header>
       </div>
     );

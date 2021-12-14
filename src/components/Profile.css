@@ -1,0 +1,18 @@
+.profile-page {
+    background-color: lightyellow;
+    height: 100%;
+    padding: 50px;
+}
+
+.profile-pic {
+    height: 200px;
+    width: 400x;
+    border-radius: 50%;
+    border: lightseagreen solid 3px;
+}
+
+.book-btn {
+    border: lightseagreen solid 3px;
+    border-radius: 10px;
+    padding: 10px;
+}
