@@ -4,7 +4,7 @@ function Calendar(props) {
     const { onChange } = props;
 
     return (
-      <div className="calendar">
+      <div className="calendar" >
       </div>
     );
   }
