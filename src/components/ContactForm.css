@@ -8,16 +8,33 @@ label {
     width: 100px;
     text-align: right;
 }
+
+input {
+   height: 25px;
+}
 input, textarea {
+  background-color: white;
   display: inline-flexbox;
   width: 300px;
-  border-radius: 5px;
+  border-radius: 4px;
   border: #97969e solid 3px;
 }
 
-button {
+.send-btn {
     border: #97969e solid 3px;
-    border-radius: 7px;
+    border-radius: 4px;
     padding: 10px;
     display:block;
+    width: 310px;
 }
+
+.sent-msg {
+    background-color: rgb(215, 233, 245);
+    border: #97969e solid 3px;
+    border-radius: 4px;
+    padding: 10px;
+    display:block;
+    width: 310px;
+    margin-left: 20px;
+}
+

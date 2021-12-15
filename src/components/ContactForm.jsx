@@ -1,10 +1,10 @@
 import "./ContactForm.css";
 import { useForm } from "react-hook-form";
 import emailjs from 'emailjs-com';
-import { ToastContainer, toast} from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
+import { useState } from "react";
 
 function ContactForm({ date }) {
+  const [sent, setSent] = useState(false);
   const {
     register,
     handleSubmit,
@@ -12,26 +12,13 @@ function ContactForm({ date }) {
     formState: { errors }
   } = useForm();
 
-  const toastifySuccess = () => {
-    toast('Form sent!', {
-      position: 'bottom-right',
-      autoClose: 5000,
-      hideProgressBar: true,
-      closeOnClick: true,
-      pauseOnHover: true,  
-      draggable: false,
-      className: 'submit-feedback success',
-      toastId: 'notifyToast'
-    });
-  };
-
   const onSubmit = async (data) => {
     const { name, email, message } = data;
 
     try {
       const templateParams = {
         name,
-        email, 
+        email,
         message
       };
 
@@ -42,15 +29,14 @@ function ContactForm({ date }) {
         process.env.REACT_APP_USER_ID
       );
       reset();
-      toastifySuccess();
-    } catch(e) {
+    } catch (e) {
       console.log(e);
     }
   };
 
   const notify = () => {
-    if(date !== new Date())
-    toast(`See you ${date}!`)};
+    setSent(true);
+  };
 
   return (
     <>
@@ -95,9 +81,14 @@ function ContactForm({ date }) {
           tabIndex={"3"}></textarea>
         {errors.message && <span className='errorMessage'>Please enter a message</span>}
         <br></br>
-        <button type="submit" onClick={() => notify()}>Send</button>
+        <button className= "send-btn" type="submit" onClick={notify}>Send</button>
       </form>
-      <ToastContainer />
+      {sent && (
+        <div className="sent-msg">
+      <p>Thank you for your message! <br></br>
+        See you {date}!</p>
+      </div>
+      )}
     </>
   );
 }
