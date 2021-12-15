@@ -1,7 +1,7 @@
 # rebound-project
-Name: Rebound project
-Description: Solo MVP project as student as Code Chrysalis.
-Features: Profile and Contact me page for a counselling therapist.
+Name: Rebound project  
+Description: Solo MVP project as student as Code Chrysalis.  
+Features: Profile and Contact me page for a counselling therapist.  
 
 # how to use
 
