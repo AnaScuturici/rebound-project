@@ -77,7 +77,7 @@ function ContactForm({ date }) {
           {...register("message", {
             required: true
           })}
-          placeholder="Let me know what's on your mind..."
+          placeholder="Your message..."
           tabIndex={"3"}></textarea>
         {errors.message && <span className='errorMessage'>Please enter a message</span>}
         <br></br>
@@ -85,7 +85,7 @@ function ContactForm({ date }) {
       </form>
       {sent && (
         <div className="sent-msg">
-      <p>Thank you for your message! <br></br>
+      <p>Thank you for your message! {"\n"}
         See you {date}!</p>
       </div>
       )}

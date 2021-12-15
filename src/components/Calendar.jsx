@@ -1,12 +1,11 @@
 import "./Calendar.css";
 
-function Calendar(props) {
-    const { onChange } = props;
+function Calendar() {
 
-    return (
-      <div className="calendar" >
-      </div>
-    );
-  }
-  
-  export default Calendar;
+  return (
+    <div className="calendar" >
+    </div>
+  );
+}
+
+export default Calendar;
