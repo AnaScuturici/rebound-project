@@ -17,7 +17,7 @@ function Profile() {
     <div className="profile-page">
       <img className="profile-pic" alt="profile-pic" src={photo} ></img>
       <h1>Julia Ivan</h1>
-      <p className="description">Julia is a licensed Family Therapist in London. She has been working in the mental health field for over ten years, and has experience working with adults, children and families who have experienced trauma.</p>
+      <p className="description">Julia is a licensed Family Therapist in London. {"\n"}She has been working in the mental health field for over ten years, {"\n"}and has experience working with adults, children and families who have experienced trauma.</p>
       <h3>Specialized in:</h3>
       <p>Family Therapy, Counseling and Psychotherapy</p>
       <button className="book-btn" onClick={handleClick}>Book a session with me!</button>
