@@ -23,13 +23,13 @@ $ npm start
 
 # tech-stack
 
-[Reactjs](https://reactjs.org/)
-[Expressjs](https://expressjs.com/)
-[Knexjs](https://knexjs.org/)
-[Postgresql](https://www.postgresql.org/)
-[Emailjs](https://www.emailjs.com/)
+[Reactjs](https://reactjs.org/)  
+[Expressjs](https://expressjs.com/)  
+[Knexjs](https://knexjs.org/)  
+[Postgresql](https://www.postgresql.org/)  
+[Emailjs](https://www.emailjs.com/)  
 
-#deployment
+# deployment
 
 Deployed on [Heroku](https://dashboard.heroku.com/apps): https://rebound-project.herokuapp.com/
 
